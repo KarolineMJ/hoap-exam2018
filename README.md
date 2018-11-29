@@ -35,3 +35,8 @@ The main idea was to create a website for an animal shelter, where volunteers an
 6. always work on a branch!!!! The branch should be named should show the objectives which is worked with
 7. remember to make commits when a meaning full step has been complited - start the message with either: added, fixed, removed or changed. So you know what have been done in the commit.
 8. only merge when we are together.
+
+## Build with
+
+- [Firebase](https://firebase.google.com) - used for database and user authentification
+- [React](https://reactjs.org/) - used for creating login page

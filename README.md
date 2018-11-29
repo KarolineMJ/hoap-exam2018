@@ -23,11 +23,14 @@ The main idea was to create a website for an animal shelter, where volunteers an
 1. when writing css - target the specific btn, with either an id or the whole component
 2. when giving names to classes and function etc. write it with camelCase ex. signinBtn
 3. when giving names to classes give it something semantic - something describtive for the specific function
-4. when writing comments in the css use a header to describe what area you are targeting ex.:
-   /_ --------------------
+4. if you have to comment on the code - use // and describe what you have done. Also remember to put in sources if you have taken it from some place. When writing comments in the css use a header to describe what area you are targeting ex.:
+
+```
+/* --------------------
    Mobile
-   ----------------------_/
-   if you have to comment on the code - use // and describe what you have done. Also remember to put in sources if you have taken it from some place.
+   ---------------------- */
+```
+
 5. when writing comments in JS, write pseudocode, describe each step in a short, specific way, so you know what the code does. If you do not understand, ask the team, put a source and mark it with an !.
 6. always work on a branch!!!! The branch should be named should show the objectives which is worked with
 7. remember to make commits when a meaning full step has been complited - start the message with either: added, fixed, removed or changed. So you know what have been done in the commit.

@@ -27,8 +27,8 @@ The main idea was to create a website for an animal shelter, where volunteers an
 
 ```
 /* --------------------
-   Mobile
-   ---------------------- */
+        Mobile
+---------------------- */
 ```
 
 5. when writing comments in JS, write pseudocode, describe each step in a short, specific way, so you know what the code does. If you do not understand, ask the team, put a source and mark it with an !.

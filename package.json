@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "For the exam assignment we picked an organization, where to we build a system to handle donations in various ways.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mysass": "node-sass sass/style.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KarolineMJ/hoap-exam2018.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KarolineMJ/hoap-exam2018/issues"
+  },
+  "homepage": "https://github.com/KarolineMJ/hoap-exam2018#readme",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

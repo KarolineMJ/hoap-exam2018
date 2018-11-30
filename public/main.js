@@ -10,7 +10,7 @@ function init() {
 
 let checkStatus = setInterval(checkLocalStorage, 1000);
 function checkLocalStorage() {
-  const user = window.localStorage.getItem("user");
+  const user = window.sessionStorage.getItem("user");
   if (user !== null) {
     clearInterval(checkStatus);
     otherContent.textContent = user;

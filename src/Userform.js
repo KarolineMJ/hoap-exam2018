@@ -15,7 +15,7 @@ class Userform extends Component {
     this.setState({
       type: e.target.value
     });
-    window.localStorage.setItem("user", e.target.value);
+    window.sessionStorage.setItem("user", e.target.value);
   };
 
   render() {

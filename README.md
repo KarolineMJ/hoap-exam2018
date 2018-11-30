@@ -8,7 +8,7 @@ The main idea was to create a website for an animal shelter, where volunteers an
 
 ### Create a new user
 
-1. Create a user with a username and password
+1. Create a user with a email and password
 2. Your password will be protected
 3. You will be asked for your preferences in animals and your working hours.
 4. The details for you will be fetched

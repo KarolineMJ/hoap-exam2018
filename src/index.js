@@ -4,7 +4,7 @@ import "./index.scss";
 import Userform from "./Userform";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<Userform />, document.getElementById("userForms"));
+ReactDOM.render(<Userform />, document.getElementById("userForm"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

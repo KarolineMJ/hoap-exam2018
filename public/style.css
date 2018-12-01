@@ -18,8 +18,15 @@ button {
 /* ---------------------------------------
         aside (top nav and footer)  
 ----------------------------------------*/
+aside * {
+  font-size: 19px;
+  padding: 1em 0;
+}
 aside span {
   float: right; /* temp solution */
+}
+#userButton {
+  border: none;
 }
 /* -----------------------
         main  

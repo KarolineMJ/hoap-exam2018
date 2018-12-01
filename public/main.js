@@ -4,17 +4,16 @@
 
 document.addEventListener("DOMContentLoaded", init);
 function init() {
-  const otherContent = document.querySelector("#otherContent");
-  console.log(otherContent);
   const callToActionBtnS = document.querySelectorAll(".callToAction");
+  const userButton = document.querySelector("#userButton");
   const userForms = document.querySelector("#userForms");
 }
 
 let checkStatus = setInterval(checkSessionStorage, 1000);
 function checkSessionStorage() {
-  const user = window.sessionStorage.getItem("user");
-  if (user !== null) {
+  const activeUser = window.sessionStorage.getItem("user");
+  if (activeUser !== null) {
     clearInterval(checkStatus);
-    otherContent.textContent = user;
+    userButton.textContent = activeUser;
   }
 }

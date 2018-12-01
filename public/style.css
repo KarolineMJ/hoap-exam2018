@@ -71,8 +71,8 @@ section {
   height: 300px;
   border: 1px solid black;
 }
-section > div:not(#userForm) {
-  /* userForm is React element */
+section > div:not(#actionForm) {
+  /* actionForm is React element */
   position: relative;
   margin-left: 50%;
   margin-top: 150px;

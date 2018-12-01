@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.scss";
 import SignInForm from "./SignInForm";
 import SettingForm from "./SettingForm";
-import Userform from "./Userform";
+import Actionform from "./Actionform";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(<SignInForm />, document.getElementById("userProfile"));
 ReactDOM.render(<SettingForm />, document.getElementById("userPreferences"));
-ReactDOM.render(<Userform />, document.getElementById("userForm"));
+ReactDOM.render(<Actionform />, document.getElementById("actionForm"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

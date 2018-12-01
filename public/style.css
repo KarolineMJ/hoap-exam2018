@@ -5,12 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  position: relative;
 }
 html {
   padding: 30px; /* temp solution */
 }
 button {
-  padding: 1em;
+  padding: 1em 0;
 }
 .hide {
   display: none;
@@ -18,15 +19,44 @@ button {
 /* ---------------------------------------
         aside (top nav and footer)  
 ----------------------------------------*/
-aside * {
-  font-size: 19px;
-  padding: 1em 0;
+aside {
+  height: 70px; /* temp solution */
 }
-aside span {
-  float: right; /* temp solution */
+aside > * {
+  font-size: 19px; /* temp solution */
+}
+aside > button {
+  position: absolute;
+  left: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#notificationButton {
+  left: auto;
+  right: 0;
+}
+#userProfile {
+  text-align: left;
+}
+#notification {
+  text-align: right;
 }
 #userButton {
   border: none;
+}
+aside div[id] {
+  width: 100%;
+  position: relative;
+  top: 70px;
+  z-index: 2;
+}
+form#signIn > * {
+  display: block;
+  width: 100%;
+  background: #eee;
+  border: none;
+  text-decoration: underline;
 }
 /* -----------------------
         main  
@@ -41,7 +71,8 @@ section {
   height: 300px;
   border: 1px solid black;
 }
-section > div {
+section > div:not(#userForm) {
+  /* userForm is React element */
   position: relative;
   margin-left: 50%;
   margin-top: 150px;
@@ -55,9 +86,6 @@ section button {
   background-color: whitesmoke;
 }
 
-/* -----------------------
-        template 
-------------------------*/
 /* -----------------------
         template 
 ------------------------*/

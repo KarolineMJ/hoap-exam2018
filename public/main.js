@@ -27,9 +27,7 @@ function showSignIn(e) {
     signInForm.classList.toggle("hide");
   } else {
     e.target.textContent =
-      e.target.textContent !== "Preference"
-        ? "Preference"
-        : `Hi ${activeUser}~`;
+      e.target.textContent !== "X" ? "X" : `Hi ${activeUser}~`;
     const userSetting = document.querySelector("#userPreferences");
     userSetting.classList.toggle("hide");
   }

@@ -20,7 +20,7 @@ class Userform extends Component {
 
   render() {
     if (this.state.activeUser !== null) {
-      return <div>Hi {this.state.activeUser}</div>;
+      return <div>active user: {this.state.activeUser}</div>;
     } else {
       return <div />;
     }

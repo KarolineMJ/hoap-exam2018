@@ -49,7 +49,7 @@ class SignInForm extends Component {
           id="signInPassword"
           onChange={this.inputPassword}
         />
-        <input type="submit" onClick={this.signin} />
+        <input type="submit" onClick={this.signin} value="Sign In" />
       </form>
     );
   }

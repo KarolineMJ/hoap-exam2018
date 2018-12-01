@@ -4,14 +4,50 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-#otherContent {
-  font-size: 50px; }
-
+  box-sizing: border-box;
+}
+html {
+  padding: 30px; /* temp solution */
+}
+button {
+  padding: 1em;
+}
+.hide {
+  display: none;
+}
+/* ---------------------------------------
+        aside (top nav and footer)  
+----------------------------------------*/
+aside span {
+  float: right; /* temp solution */
+}
 /* -----------------------
-        template 
+        main  
 ------------------------*/
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 30px;
+}
+section {
+  position: relative;
+  height: 300px;
+  border: 1px solid black;
+}
+section > div {
+  position: relative;
+  margin-left: 50%;
+  margin-top: 150px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+section button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  background-color: whitesmoke;
+}
+
 /* -----------------------
         template 
 ------------------------*/

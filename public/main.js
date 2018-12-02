@@ -1,7 +1,7 @@
 "use strict";
 let activeUser = window.sessionStorage.getItem("user");
-// const newUserSectionS = document.querySelectorAll(".newUser");
-// const oldUserSectionS = document.querySelectorAll(".oldUser");
+const newUserSectionS = document.querySelectorAll(".newUser");
+const oldUserSectionS = document.querySelectorAll(".oldUser");
 
 document.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -21,8 +21,8 @@ function checkSessionStorage() {
   if (activeUser !== null) {
     clearInterval(checkStatus);
     userButton.textContent = `Hi ${activeUser}~`;
-    // newUserSectionS.forEach(section => section.classList.add("hide"));
-    // oldUserSectionS.forEach(section => section.classList.remove("hide"));
+    newUserSectionS.forEach(section => section.classList.add("hide"));
+    oldUserSectionS.forEach(section => section.classList.remove("hide"));
   }
 }
 

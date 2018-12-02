@@ -4,11 +4,18 @@ import "./index.scss";
 import SignInForm from "./SignInForm";
 import SettingForm from "./SettingForm";
 import Actionform from "./Actionform";
+import FollowedAnimals from "./FollowedAnimals";
+import AllAnimals from "./AllAnimals";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(<SignInForm />, document.getElementById("userProfile"));
 ReactDOM.render(<SettingForm />, document.getElementById("userPreferences"));
 ReactDOM.render(<Actionform />, document.getElementById("actionForm"));
+ReactDOM.render(
+  <FollowedAnimals />,
+  document.getElementById("followedAnimals")
+);
+ReactDOM.render(<AllAnimals />, document.getElementById("allAnimals"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

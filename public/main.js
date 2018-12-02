@@ -1,5 +1,7 @@
 "use strict";
 let activeUser = window.sessionStorage.getItem("user");
+// const newUserSectionS = document.querySelectorAll(".newUser");
+// const oldUserSectionS = document.querySelectorAll(".oldUser");
 
 document.addEventListener("DOMContentLoaded", init);
 function init() {
@@ -8,7 +10,7 @@ function init() {
   const userButton = document.querySelector("#userButton");
   const notificationButton = document.querySelector("#notificationButton");
   const actionForm = document.querySelector("#actionForm");
-  userButton.addEventListener("click", showSignInPreference);
+  userButton.addEventListener("click", toggleSignInPreference);
   notificationButton.addEventListener("click", showNotification);
   actionForm.addEventListener("click", showActionForm);
 }
@@ -19,14 +21,18 @@ function checkSessionStorage() {
   if (activeUser !== null) {
     clearInterval(checkStatus);
     userButton.textContent = `Hi ${activeUser}~`;
+    // newUserSectionS.forEach(section => section.classList.add("hide"));
+    // oldUserSectionS.forEach(section => section.classList.remove("hide"));
   }
 }
 
-function showSignInPreference(e) {
+function toggleSignInPreference(e) {
   if (activeUser === null) {
     e.target.textContent = e.target.textContent !== "X" ? "X" : "Sign In";
     const signInForm = document.querySelector("#userProfile");
     signInForm.classList.toggle("hide");
+    // oldUserSectionS.forEach(section => section.classList.add("hide"));
+    // newUserSectionS.forEach(section => section.classList.remove("hide"));
   } else {
     e.target.textContent =
       e.target.textContent !== "X" ? "X" : `Hi ${activeUser}~`;

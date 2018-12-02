@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./SignInForm.scss";
+
 class SignInForm extends Component {
   state = {
     userEmail: "",
@@ -26,8 +27,12 @@ class SignInForm extends Component {
     const userEmail = this.state.userEmail;
     const userPassword = this.state.userPassword;
     /////////////////////// send these data to firebase for authentication
-    /////////////////////// if pass authentication, get username and set it in session
+    /////////////////////// if pass authentication, get username and set it in session and only show sections for old user
     window.sessionStorage.setItem("user", this.state.userEmail);
+    const newUserSectionS = document.querySelectorAll(".newUser");
+    const oldUserSectionS = document.querySelectorAll(".oldUser");
+    newUserSectionS.forEach(section => section.classList.add("hide"));
+    oldUserSectionS.forEach(section => section.classList.remove("hide"));
   };
   render() {
     return (

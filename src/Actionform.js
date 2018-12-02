@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./Actionform.scss";
-import Signup from "./Signup";
-import Preferences from "./Preferences.js";
 
 class Userform extends Component {
   state = {
@@ -19,10 +17,21 @@ class Userform extends Component {
   };
 
   render() {
-    if (this.state.activeUser !== null) {
-      return <div>active user: {this.state.activeUser}</div>;
+    if (this.state.activeUser === null) {
+      return (
+        <div>
+          <h3>Call-to-action buttons</h3>
+          <button className="callToAction">subscribe to newsletter</button>
+          <button className="callToAction">one-time donation</button>
+          <button className="callToAction">sign up as member</button>{" "}
+        </div>
+      );
     } else {
-      return <div />;
+      return (
+        <div>
+          <p>active user present</p>
+        </div>
+      );
     }
     // return (
     //   <div>

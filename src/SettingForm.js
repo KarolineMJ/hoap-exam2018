@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import "./SettingForm.scss";
+
 class SettingForm extends Component {
   state = {};
   signOut = () => {
     window.sessionStorage.removeItem("user");
+    const newUserSectionS = document.querySelectorAll(".newUser");
+    const oldUserSectionS = document.querySelectorAll(".oldUser");
+    newUserSectionS.forEach(section => section.classList.remove("hide"));
+    oldUserSectionS.forEach(section => section.classList.add("hide"));
   };
   render() {
     return (
